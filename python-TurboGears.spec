@@ -2,6 +2,7 @@
 %define	module	TurboGears
 
 Summary:	The rapid web development megaframework
+Summary(pl):	Wielkie ¶rodowisko do szybkiego tworzenia serwisów WWW
 Name:		python-TurboGears
 Version:	0.8a5
 Release:	1
@@ -12,21 +13,23 @@ Source0:	http://www.turbogears.org/download/eggs/TurboGears-0.8a5.tar.gz
 URL:		http://www.turbogears.org/
 %pyrequires_eq	python
 BuildRequires:	python-devel
-BuildRequires:	unzip
 BuildRequires:	python-setuptools
+BuildRequires:	unzip
+Requires:	python-FormEncode
 Requires:	python-TestGears
 Requires:	python-cElementTree
-Requires:	python-FormEncode
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-TurboGears is the rapid web development megaframework you've been looking for.
+TurboGears is the rapid web development megaframework you've been
+looking for.
+
+%description -l pl
+TurboGears to wielkie ¶rodowisko do szybkiego tworzenia serwisów WWW.
 
 %prep
 %setup  -q -c
-
-%build
 
 %install
 rm -rf $RPM_BUILD_ROOT

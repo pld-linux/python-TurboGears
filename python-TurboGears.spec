@@ -4,23 +4,23 @@
 Summary:	The rapid web development megaframework
 Summary(pl):	Wielkie ¶rodowisko do szybkiego tworzenia serwisów WWW
 Name:		python-TurboGears
-Version:	0.8a5
-Release:	2
+Version:	0.8.8
+Release:	1
 License:	GPL
 Group:		Development/Languages/Python
 Source0:	http://www.turbogears.org/download/eggs/TurboGears-%{version}.tar.gz
-# Source0-md5:	ff1c1737fac46eb7ec931c05c461bc68
+# Source0-md5:	83be5f971d5c208c3e91e60b570cbcff
 URL:		http://www.turbogears.org/
 %pyrequires_eq	python
 BuildRequires:	python-devel
-BuildRequires:	python-setuptools
+BuildRequires:	python-setuptools >= 0.6a9
 BuildRequires:	unzip
 Requires:	python-FormEncode
 Requires:	python-TestGears
 Requires:	python-elementtree
 Requires:	python-cElementTree
 Requires:	python-kid
-Requires:	python-cherrypy
+Requires:	python-cherrypy >= 2.1.1
 Requires:	python-SQLObject
 Requires:	python-json-py
 BuildArch:	noarch

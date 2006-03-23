@@ -21,7 +21,7 @@ Requires:	python-elementtree
 Requires:	python-cElementTree
 Requires:	python-kid
 Requires:	python-cherrypy >= 2.1.1
-Requires:	python-SQLObject
+Requires:	python-SQLObject >= 0.7.1-0.1457.0
 Requires:	python-json-py
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

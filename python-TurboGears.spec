@@ -12,17 +12,17 @@ Source0:	http://files.turbogears.org/eggs/TurboGears-%{version}.tar.gz
 # Source0-md5:	57580dce73ab2fc5c7f72e3e3cd804b1
 URL:		http://www.turbogears.org/
 %pyrequires_eq	python
-BuildRequires:	python-devel >= 2.5
+BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	python-setuptools >= 0.6a9
 BuildRequires:	unzip
 Requires:	python-FormEncode
-Requires:	python-TestGears
-Requires:	python-elementtree
-Requires:	python-cElementTree
-Requires:	python-kid
-Requires:	python-cherrypy >= 2.1.1
 Requires:	python-SQLObject >= 0.7.1-0.1457.0
+Requires:	python-TestGears
+Requires:	python-cElementTree
+Requires:	python-cherrypy >= 2.1.1
+Requires:	python-elementtree
 Requires:	python-json-py
+Requires:	python-kid
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

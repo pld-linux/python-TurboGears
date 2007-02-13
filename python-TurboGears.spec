@@ -2,7 +2,7 @@
 %define	module	TurboGears
 
 Summary:	The rapid web development megaframework
-Summary(pl.UTF-8):   Wielkie środowisko do szybkiego tworzenia serwisów WWW
+Summary(pl.UTF-8):	Wielkie środowisko do szybkiego tworzenia serwisów WWW
 Name:		python-TurboGears
 Version:	1.0.1
 Release:	1

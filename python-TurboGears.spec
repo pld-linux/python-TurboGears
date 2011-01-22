@@ -13,8 +13,9 @@ Source0:	http://files.turbogears.org/eggs/TurboGears-%{version}.tar.gz
 URL:		http://www.turbogears.org/
 %pyrequires_eq	python
 BuildRequires:	python-devel >= 1:2.5
+BuildRequires:	python-modules
 BuildRequires:	python-setuptools >= 0.6a9
-BuildRequires:	unzip
+BuildRequires:	rpm-pythonprov
 Requires:	python-FormEncode
 Requires:	python-SQLObject >= 0.7.1-0.1457.0
 Requires:	python-TestGears

@@ -38,13 +38,13 @@ TurboGears to wielkie środowisko do szybkiego tworzenia serwisów WWW.
 %setup -q -n %{module}-%{version}
 
 %build
-python ./setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 install -d build/scripts-%{py_ver}
-python ./setup.py install \
+%py_install \
         --single-version-externally-managed \
         --optimize 2 \
         --root=$RPM_BUILD_ROOT

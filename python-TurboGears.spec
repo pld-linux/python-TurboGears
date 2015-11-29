@@ -11,6 +11,7 @@ Group:		Development/Languages/Python
 Source0:	http://files.turbogears.org/eggs/TurboGears-%{version}.tar.gz
 # Source0-md5:	57580dce73ab2fc5c7f72e3e3cd804b1
 URL:		http://www.turbogears.org/
+BuildRequires:	rpmbuild(macros) >= 1.710
 %pyrequires_eq	python
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	python-modules
